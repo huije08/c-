@@ -1,70 +1,97 @@
 ﻿#include <iostream>
 
-int data = 1;
+class GameObject
+{
+#pragma region 접근 지정자
+	// 클래스 내부에 포함되어 있는 속성에 접근 범위를
+	// 제한하는 지정자입니다.
+
+	// public : 클래스 내부와 자기가 상속하고 있는 클래스 까지만 접근을 허용하는 지정자 입니다.
+	//			외부에서도 접근을 허용하는 지정자입니다.
+
+	// protected : 클래스 내부와 자기가 상속하고 있는 클래스 그리고 클래스 
+	//			   외부에서도 접근을 허용하는 지정자입니다.
+
+	// private : 클래스 내부까지만 접근을 허용하는 지정자입니다.
+
+#pragma endregion
+
+private:
+	int x;
+protected:
+	int y;
+public:
+	int z;
+};
+
+class GameObject1
+{
+public:
+	int z;
+
+};
+
+class GameObject2
+{
+public:
+	int z ;
+
+};
+
+class GameObject3
+{
+public:
+	int z;
+
+};
+
+void Swap(int x, int y)
+{
+	int trmporary = x;
+	x = y;
+	y = trmporary;
+}
 
 int main()
 {
-#pragma region 스트림
-	// 시간의 흐름에 따라 연속적으로 발생하는 데이터의
-	// 흐름입니다.
+#pragma region 클래스
+	// 사용자 저으이 데이커 유형으로 속성과 함수가 포함
+	// 되어 있으며, 클래스르 ㄹ통해 객체를 생성하여 접근
+	// 하고 사용하는 집합체 입니다.
 
-	// << (삽입연산자)
-	// 자신이 참조하고 있는 값을 반환하여 출력하는 연산자 입니다.
+	// GameObject1 gameObject1; // [ ] - > Stack
+	// GameObject2 gameObject2;
+	// GameObject3 gameObject3;
+	// 
+	// gameObject1.z = 5;
+	// gameObject2.z = 10;
+	// gameObject3.z = 30;
+	// 
+	// std::cout << "gameObject1의 z 값 : " << gameObject1.z << std::endl;
+	// std::cout << "gameObject2의 z 값 : " << gameObject2.z << std::endl;
+	// std::cout << "gameObject3의 z 값 : " << gameObject3.z << std::endl;
 
-	// int errorCode = -9999;
-	
-	// std::cout << "Hello World~" << std::endl;
-	
-	// std::cout << "Error Code : " << errorCode << std::endl;
-
-	// >> (추출연산자)
-	// 특정한 값을 입력받은 다음 버퍼에 저장하는 연산자 입니다.
-
-	//int n = 0;
-	
-	//std::cin >> n;
-	
-	//std::cout << "n의값 : " << n << std::endl;
+	//클래스의 경우 클래스 내부에 있는 변수는 클래스의
+	//메모리 영역에 포하모디지마느 정적 변수와 함수의 메모리는 
+	// 클래스 영역에 포함되지 않습니다.
 #pragma endregion
 
-#pragma region 범위 지정 연산자
-	// 여러 범위에서 사용되는 식별자를 구분하는데
-	// 사용하는 연산자입니다.
+#pragma region 참조자
+	// 어떤 변수의 메모리 공간에 또 다른 이름
+	// 지정하는 지정자 입니다.
 
 	//int data = 10;
+	//int & reference = data;
 	//
-	//std::cout << "지역 변수 data의 값 : " << data << std::endl;
-	//std::cout << "전역 변수 data의 값 : " << ::data << std::endl;
+	//reference = 20;
 
-	// 범위지정 연산자는 전역 변수와 가은 이름의 지역변수가
-	// 선언되었을 떄 가장 가까운 범위에 선언된 변수의 이름을 사용
-	// 하는 범위 규칙이 존재하기 떄문에 전역변수가 호출되지 않습니다.
-#pragma endregion
+	int a = 10;
+	int b = 20;
 
-#pragma region 동적 할당
-	// 프로그램 실행 중에 필요한 만큼 메모리를
-	//할당하는 작업입니다.
+	Swap(a, b);
 
-	//int * p = new int;
-	//
-	//*p = 100;
-	//
-	//std::cout << "p가 가리키는 주소 : " << p << std::endl;
-	//std::cout << "p가 가리키는 메모리의 값 : " << *p << std::endl;
-	//
-	//	delete p;
-	//
-	//p = nullptr;
-	//
-	//new int[3];
-	//
-	//for (int i = 0; i < 3; i++)
-	//{
-	//	p[i] = (i + 1) * 10;
-	//	std::cout << "p[" << i << "]" << p[i] << std::endl;
-	//}
-	//
-	//delete [ ] p;
+	std::cout << "a : " << a << std::endl;
+	std::cout << "b : " << b << std::endl;
 
 #pragma endregion
 
