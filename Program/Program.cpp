@@ -1,100 +1,10 @@
 ﻿#include <iostream>
 
-class GameObject
-{
-#pragma region 접근 지정자
-	// 클래스 내부에 포함되어 있는 속성에 접근 범위를
-	// 제한하는 지정자입니다.
-
-	// public : 클래스 내부와 자기가 상속하고 있는 클래스 까지만 접근을 허용하는 지정자 입니다.
-	//			외부에서도 접근을 허용하는 지정자입니다.
-
-	// protected : 클래스 내부와 자기가 상속하고 있는 클래스 그리고 클래스 
-	//			   외부에서도 접근을 허용하는 지정자입니다.
-
-	// private : 클래스 내부까지만 접근을 허용하는 지정자입니다.
-
-#pragma endregion
-
-private:
-	int x;
-protected:
-	int y;
-public:
-	int z;
-};
-
-class GameObject1
-{
-public:
-	int z;
-
-};
-
-class GameObject2
-{
-public:
-	int z ;
-
-};
-
-class GameObject3
-{
-public:
-	int z;
-
-};
-
-void Swap(int x, int y)
-{
-	int trmporary = x;
-	x = y;
-	y = trmporary;
-}
+using namespace std;
 
 int main()
 {
-#pragma region 클래스
-	// 사용자 저으이 데이커 유형으로 속성과 함수가 포함
-	// 되어 있으며, 클래스르 ㄹ통해 객체를 생성하여 접근
-	// 하고 사용하는 집합체 입니다.
 
-	// GameObject1 gameObject1; // [ ] - > Stack
-	// GameObject2 gameObject2;
-	// GameObject3 gameObject3;
-	// 
-	// gameObject1.z = 5;
-	// gameObject2.z = 10;
-	// gameObject3.z = 30;
-	// 
-	// std::cout << "gameObject1의 z 값 : " << gameObject1.z << std::endl;
-	// std::cout << "gameObject2의 z 값 : " << gameObject2.z << std::endl;
-	// std::cout << "gameObject3의 z 값 : " << gameObject3.z << std::endl;
-
-	//클래스의 경우 클래스 내부에 있는 변수는 클래스의
-	//메모리 영역에 포하모디지마느 정적 변수와 함수의 메모리는 
-	// 클래스 영역에 포함되지 않습니다.
-#pragma endregion
-
-#pragma region 참조자
-	// 어떤 변수의 메모리 공간에 또 다른 이름
-	// 지정하는 지정자 입니다.
-
-	//int data = 10;
-	//int & reference = data;
-	//
-	//reference = 20;
-
-	int a = 10;
-	int b = 20;
-
-	Swap(a, b);
-
-	std::cout << "a : " << a << std::endl;
-	std::cout << "b : " << b << std::endl;
-
-#pragma endregion
 
 	return 0;
 }
-

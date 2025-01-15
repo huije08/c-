@@ -1,2 +1,2 @@
 ﻿  Program.cpp
-  Program.vcxproj -> C:\Users\huije\OneDrive\바탕 화면\c-\Program\x64\Debug\Program.exe
+C:\Users\huije\OneDrive\바탕 화면\c-\Program\Program.cpp(43,13): error C2761: 'int Object::count': redeclaration of member is not allowed
