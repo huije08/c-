@@ -1,4 +1,2 @@
 ﻿  Source.cpp
-C:\Users\huije\OneDrive\바탕 화면\c-\Program\Source.cpp(42,9): warning C4101: 'marine': unreferenced local variable
-C:\Users\huije\OneDrive\바탕 화면\c-\Program\Source.cpp(41,9): warning C4101: 'terran': unreferenced local variable
   Program.vcxproj -> C:\Users\huije\OneDrive\바탕 화면\c-\Program\x64\Debug\Program.exe
