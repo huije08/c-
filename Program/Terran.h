@@ -1,4 +1,7 @@
 #pragma once
+#include<iostream>
+
+using namespace std;
 
 class Terran
 {
@@ -8,6 +11,8 @@ protected:
 	int health;
 public:
 	Terran();
+
+	void Stats();
 
 };
 

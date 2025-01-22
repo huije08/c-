@@ -4,10 +4,8 @@
 class Vulture : public Terran
 {
 public:
-	Vulture()
-	{
-		
-	};
-
+	Vulture();
+	
+	
 };
 
