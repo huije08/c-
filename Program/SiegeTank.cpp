@@ -9,8 +9,8 @@ SiegeTank::SiegeTank()
 
 void SiegeTank::Stats()
 {
-	cout << "Attack ÅÊÅ© : " << attack << endl;
-	cout << "Attack ½ÃÁî : " << attack + 40 << endl;
+	cout << "Attack (Tank) : " << attack << endl;
+	cout << "Attack (Siege) : " << attack + 40 << endl;
 	cout << "Health : " << health << endl;
 	cout << "Defense : " << defense << endl;
 }
