@@ -1,0 +1,8 @@
+﻿  Goliath.cpp
+  SiegeTank.cpp
+  Terran.cpp
+  Vulture.cpp
+  Source.cpp
+C:\Users\huije\OneDrive\바탕 화면\c-\Class7th (Virture Function)\Source.cpp(28,6): warning C4101: 'num': unreferenced local variable
+  Generating Code...
+  Class7th (Virture Function).vcxproj -> C:\Users\huije\OneDrive\바탕 화면\c-\Program\x64\Debug\Class7th (Virture Function).exe
