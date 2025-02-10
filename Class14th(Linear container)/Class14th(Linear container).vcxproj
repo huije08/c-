@@ -24,6 +24,7 @@
     <ProjectGuid>{faf9c4dc-951c-4289-b338-1ffb4af4d013}</ProjectGuid>
     <RootNamespace>Class14thLinearcontainer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Class13th(Linear container)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
